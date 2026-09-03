@@ -3,6 +3,7 @@
 **Changelog** for `yini-parser-typescript`.
 
 --## [Upcoming/Unreleased] - FUTURE  
+- **Added:** Added **CI coverage** for `yini-test-suite`, so future changes are tested against the shared YINI conformance suite automatically.
 
 ## 1.6.2 - 2026 Aug  
 - **Fixed:** Raw single-line strings now reject literal control characters, such as tabs, and report a clearer string diagnostic.

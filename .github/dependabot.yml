@@ -1,14 +1,13 @@
-version: 3
-updates:
-    - package-ecosystem: 'npm'
-      directory: '/'
-      schedule: { interval: 'mothly' }
-      open-pull-requests-limit: 10
-      groups:
-          minor-and-patch:
-              patterns: ['*']
-              update-types: ['minor', 'patch']
+# Configures Dependabot to open monthly dependency-update pull requests.
+version: 2
 
-    - package-ecosystem: 'github-actions'
-      directory: '/'
-      schedule: { interval: 'mothly' }
+updates:
+    - package-ecosystem: npm
+      directory: /
+      schedule:
+          interval: monthly
+
+    - package-ecosystem: github-actions
+      directory: /
+      schedule:
+          interval: monthly
